@@ -14,7 +14,7 @@ public class Array2DOmzetStart {
 
     public static void main(String[] args){
         double[][] omzetCijfers = {
-                                    {1220, 2345, 6700, 3000}, //huidig jaar
+                                    {1220, 2345, 6700, 3000}, //current year
                                     {5300, 2000, 1000, 5500},
                                     {2316, 6244, 2445, 6255},
                                     {4225, 1425, 2677, 6777},
