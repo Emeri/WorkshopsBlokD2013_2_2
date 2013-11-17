@@ -1,7 +1,7 @@
 package workshop1;
 
 import java.util.Calendar;
-import java.util.Date;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +10,7 @@ import java.util.Date;
  * Time: 4:27 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Array2DOmzet {
+public class Array2DOmzetUitgewerkt {
 
     public static void main(String[] args){
         double[][] omzetCijfers = {

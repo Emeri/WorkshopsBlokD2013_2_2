@@ -1,6 +1,6 @@
 package workshop1;
 
-import java.util.ArrayList;
+
 import java.util.Calendar;
 
 /**
@@ -24,11 +24,6 @@ public class Array2DOmzetStart {
 
 
 
-        ArrayList<String> namen = new ArrayList();
-        namen.add("Mees");
-        namen.add("Guus");
-        namen.add(1, "Thom");
-        namen.remove(0);
 
 
 
