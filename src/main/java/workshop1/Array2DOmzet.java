@@ -10,7 +10,7 @@ import java.util.Calendar;
  * Time: 4:27 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Array2DOmzetStart {
+public class Array2DOmzet {
 
     public static void main(String[] args){
         double[][] omzetCijfers = {
@@ -23,10 +23,6 @@ public class Array2DOmzetStart {
                                 };
 
 
-
-
-
-
         int jaar = meesteOmzetInJaar(omzetCijfers);
         System.out.println("Meeste omzet in jaar: " + jaar);
 
@@ -35,14 +31,30 @@ public class Array2DOmzetStart {
     }
 
 
-    //TODO implement
+    //TODO implementeren
     private static int meesteOmzetInKwartaal(double[][] input){
-         return 0;
-
+        return 0;
     }
 
-    //TODO implement
+
     private static int meesteOmzetInJaar(double[][] input){
-         return 0;
+
+        int huidigJaar = Calendar.getInstance().get(Calendar.YEAR);
+
+        double maxOmzetPerJaar = Integer.MIN_VALUE;
+        int indexJaar = 0;
+        for(int i=0; i<input.length; i++){
+            double omzetIter = 0;
+            for(int j=0; j<input[i].length; j++){
+                omzetIter+= input[i][j];
+            }
+            if(omzetIter > maxOmzetPerJaar){
+                indexJaar = i;
+                maxOmzetPerJaar = omzetIter;
+            }
+        }
+
+        return huidigJaar - indexJaar;
+
     }
 }
