@@ -22,7 +22,6 @@ public class Array2DOmzet {
                                     {3452, 25377, 5200, 7011}
                                 };
 
-
         int jaar = meesteOmzetInJaar(omzetCijfers);
         System.out.println("Meeste omzet in jaar: " + jaar);
 
@@ -33,8 +32,10 @@ public class Array2DOmzet {
 
     //TODO implementeren
     private static int meesteOmzetInKwartaal(double[][] input){
-        return 0;
+
+       return 0;
     }
+
 
 
     private static int meesteOmzetInJaar(double[][] input){
