@@ -26,7 +26,7 @@ public class Persoon {
 
 
     public String persoonsGegevens(){
-      return naam + " " + adres;
+      return naam + " " + adres + " " + salaris;
     }
 
     @Override
