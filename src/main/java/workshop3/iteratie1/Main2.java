@@ -27,7 +27,7 @@ public class Main2 {
         //r2 = r1; //Incompatible types
 
         r2 = (Rectangle)r1;
-        //r2 = (Rectangle)c1; //ClassCastException
+        r2 = (Rectangle)c1; //ClassCastException
 
 
     }
