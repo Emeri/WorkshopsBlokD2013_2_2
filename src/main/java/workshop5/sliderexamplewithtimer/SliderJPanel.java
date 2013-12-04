@@ -36,7 +36,7 @@ public class SliderJPanel extends JPanel implements ChangeListener, ActionListen
         
         public SliderJPanel(){
             
-            
+
             color = new Color(MINVALUE, MINVALUE, MINVALUE);
             initSliders();
             
@@ -54,6 +54,30 @@ public class SliderJPanel extends JPanel implements ChangeListener, ActionListen
             this.add(sliders, BorderLayout.NORTH);
             this.add(colorPanel, BorderLayout.CENTER);
 
+
+            //Anonymous innerclass
+            addKeyListener(new KeyListener() {
+                @Override
+                public void keyTyped(KeyEvent e) {
+
+                    System.out.println("KeyTyped");
+                }
+
+                @Override
+                public void keyPressed(KeyEvent e) {
+                    System.out.println("KeyPressed");
+                }
+
+                @Override
+                public void keyReleased(KeyEvent e) {
+                    switch(e.getKeyCode()){
+                        case KeyEvent.VK_R: red.setValue(MAXVALUE); break;
+                    }
+                }
+            });
+
+            this.setFocusable(true);
+            this.requestFocusInWindow();
 
 
             timer = new Timer(5000, this);
@@ -79,6 +103,7 @@ public class SliderJPanel extends JPanel implements ChangeListener, ActionListen
     @Override
     public void stateChanged(ChangeEvent e) {
         color = new Color(red.getValue(), green.getValue(), blue.getValue());
+        requestFocus();
         repaint();
     }
 
