@@ -36,7 +36,7 @@ public class PalindroomRecursie {
                     return false; // Geen palindrome, dus retourneren we false
                 }
             }       
-            else if(!Character.isLetter(laatsteLetter)){ //Checken of eerste char een letter is.
+            else if(!Character.isLetter(laatsteLetter)){ //Checken of laatste char een letter is.
                 String korter = text.substring(0, text.length() - 1); //Laatste char (is geen letter) verwijderen van string
                 return isPalindrome(korter); //We gaan in recursie met korter (simpelere) string
             }

@@ -13,7 +13,7 @@ public class PermutatiesRecursie {
     public static void main(String[] args){
         
         
-        ArrayList<String> results = perm("OPA");
+        ArrayList<String> results = perm("opa");
         
         for(String s : results){
             System.out.println(s);

@@ -20,7 +20,7 @@ public class FibonacciReeksRecursie {
     private static int fibRec(int getal){
         if(getal <= 2){ //Basisgeval(len)  
             return 1;
-        }else{ //Anders gaan we in recursie.
+        }else{ //Recursie.
             return fibRec(getal-1) + fibRec(getal-2);
         }
     }
